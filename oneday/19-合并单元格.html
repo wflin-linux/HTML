@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- 跨列合并 以左边单元格为准 colspan = "numbername",numbername:跨几行的行数，然后删除当前行后面number - 1个单元格-->
+<!-- 跨行合并 以上边单元格为准 rowspan = "numbername",numbername:跨几列的列数，然后删除下一列后面number - 1个单元格-->
+<body>
+    <table  align="center"    border="1" cellspacing="0" width="500" height="249">
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>

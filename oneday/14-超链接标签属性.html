@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <!-- 外部链接 <a> 标签中有俩属性,href属性是链接的地址，后面的 target 是设定一种页面的跳转属性默认的是_self就是当前页面跳转
+        target = _blank 是设定新页面跳转 -->
+    <a href="https:\\baidu.com" target="_self">百度 -当前页面跳转</a>
+    <br />
+    <a href="https:\\baidu.com" target="_blank">百度 -新建页面跳转</a>
+    <br \>  <!-- 换行 -->
+    
+            <!-- 内部链接 <a> 标签中跳转内部链接时直接把这个html文件的路径放到<a href =""></a> href 的标签里面-->
+    <a href="./04-标题标签.html" target="_blank">标签的使用方法</a> <br \>
+            <!-- 如果是一个下载链接那么就在<a>标签的href属性中放入下载文件的压缩包或者exe文件-->
+    <a href="../笔记.zip" target="_blank">下载zip</a>
+    <br \>
+            <!-- 也可以在图片或者其他问减重加入超链接，直接把图片当作一个文本字段就可以了-->
+    <a href="https://www.baidu.com" target="_blank"> <img src="./姚明.jpg " title="点击跳转到百度"> </a> <br \>
+            <!-- 空链接 就是啥也不做-->
+    <a href="#">空链接</a>
+</body>
+</html>

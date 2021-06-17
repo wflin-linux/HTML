@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 把 ol 里的小li 选择出来 */
+        ol li {
+            color: red;
+        }
+
+        ol li a {
+            color: red;
+        }
+
+        .nav li {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 后代选择器 -->
+    <!-- 语法： 元素1 元素2 { 样式申明 }    中间是空格隔开，并且改变的是孩子的颜色 -->
+    <ol>
+        <li>我是ol 的孩子</li>
+        <li>我是ol 的孩子</li>
+        <li>我是ol 的孩子</li>
+        <li> <a href="#">儿子</a> </li>
+    </ol>
+    <ul>
+        <li>我是ul 的孩子</li>
+        <li>我是ul 的孩子</li>
+        <li>我是ul 的孩子</li>
+    </ul>
+
+    <!-- 多个选择器的时候可以通过类名 标签名 进行渲染 -->
+    <ol class="nav">
+        <li>棕色</li>
+        <li>棕色</li>
+        <li>棕色</li>
+    </ol>
+</body>
+
+</html>

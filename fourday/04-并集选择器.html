@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>并集选择器</title>
+    <style>
+        /* 并集选择器： 
+                语法： 元素1,元素2 {样式声明} 逗号分隔
+            并集选择器一般竖着写
+        */
+
+        /* 请把熊大和熊二改为粉色 */
+        div,
+        p {
+            color: red;
+        }
+
+        /* 把熊大和熊二改为红色 还有小猪一家改为红色 */
+        div,
+        p,
+        .pig li {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>熊大</div>
+    <p>熊二</p>
+    <span>光头强</span>
+    <ul class="pig">
+        <li>小猪佩奇</li>
+        <li>猪爸爸</li>
+        <li>猪妈妈</li>
+    </ul>
+</body>
+
+</html>
